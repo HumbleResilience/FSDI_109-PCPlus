@@ -1,0 +1,56 @@
+.product{
+    color: #fff;
+    border: 1px solid black;
+    display: inline-block;
+    padding:5px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px gray;
+    margin:5px;
+    width:350px;
+    vertical-align: top;
+}
+
+.product label{
+    display: block;
+    text-align:right;
+    padding-right:5px;
+    
+}
+
+.product .price{
+    color:#fff;
+    display:inline-block
+    
+}
+
+
+.product .total{
+   color:#fff;
+   font-weight:bold;
+   font-size: 18px;
+   display:inline-block;
+}
+
+
+.product .checkoutBtn{
+    display:inline-block;
+    margin-left:20px;
+}
+
+.product .quantityPicker{
+    display:inline-block;
+}
+
+.product .product-img{
+    height:300px;
+    width:100%;
+}
+
+.product .display{
+    display:block;
+}
+
+.product h2{
+    font-size:25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
