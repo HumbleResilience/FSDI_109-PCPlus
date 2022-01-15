@@ -1,9 +1,12 @@
 import "./product.css";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import QuantityPicker from "./quantityPicker";
+import storeContext from "../context/storeContext";
 
 const Product = (props) => {
   const [quantity, setQuantity] = useState(1);
+  const add2Cart = useContext(storeContext).addProductToCart;
+
   const handleQuantityChange = (val) => {
     setQuantity(val);
   };
@@ -17,7 +20,13 @@ const Product = (props) => {
 
   const handleAdd = () => {
     //when you click the cart button do this
-    console.log("Here is your cart");
+
+    let prod = {
+      ...props.info,
+      quantity: quantity,
+    };
+
+    add2Cart(prod); // call the function that exist in the context(check the import)
   };
 
   return (

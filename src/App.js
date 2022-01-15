@@ -7,6 +7,7 @@ import Home from "./components/home";
 import About from "./components/about";
 import Cart from "./components/cart";
 import Test from "./components/test";
+import GlobalContext from './context/globalContext';
 
 //import boostrap
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -17,27 +18,29 @@ import{ BrowserRouter, Route, Routes} from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <GlobalContext>
+        <BrowserRouter>
 
-        <NavBar></NavBar>
+          <NavBar></NavBar>
 
-        <Routes>
+          <Routes>
 
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/catalog" element={ <Catalog/> } ></Route>
-          <Route path="/about" element={ <About/> } ></Route>
-          <Route path="/aboutme" element={ <About/> } ></Route>
-          <Route path="/cart" element={ <Cart/> } ></Route>
-          <Route path="/test" element={ <Test/> } ></Route>
-          
-
-
-
-        </Routes>
+            <Route path="/" element={ <Home/>}></Route>
+            <Route path="/catalog" element={ <Catalog/> } ></Route>
+            <Route path="/about" element={ <About/> } ></Route>
+            <Route path="/aboutme" element={ <About/> } ></Route>
+            <Route path="/cart" element={ <Cart/> } ></Route>
+            <Route path="/test" element={ <Test/> } ></Route>
+            
 
 
-        <Footer></Footer>
-      </BrowserRouter>
+
+          </Routes>
+
+
+          <Footer></Footer>
+        </BrowserRouter>
+      </GlobalContext>
     </div>
   );
 }
