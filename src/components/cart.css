@@ -9,3 +9,22 @@
     text-align:center;
     margin-bottom:0;
 }
+
+.cart-container{
+    display:flex;
+}
+
+.cart-container .products{
+    flex: 4;
+
+}
+
+.cart-container .side-menu{
+    flex:1;
+    background-color:rgb(39, 133, 133);
+}
+
+.cart-container button{
+    max-height:40px;
+    max-width: 100%;
+}

@@ -1,0 +1,40 @@
+
+
+.cart-prod{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-bottom: 1px solid gray;
+    border-radius: 6px;
+    padding: 5px;
+    margin-left:60px;
+    margin-right:60px;
+
+}
+
+.cart-prod img {
+    max-width: 100px;
+    padding:5px;
+    
+  
+    
+}
+
+
+
+.card-prod h6{
+    flex: 6;
+    padding:5px;
+    
+}
+
+
+.cart-prod label{
+    flex: 1; 
+}
+
+.cart-prod button{
+    flex:1;
+    max-height:50px;
+    max-width:80px;
+}
